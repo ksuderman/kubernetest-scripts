@@ -22,7 +22,7 @@ if [[ ! -e $KUBECONFIG ]] ; then
 	exit 1
 fi
 
-rules = $1
+rules=$1
 
 if [[ ! -e $rules ]] ; then
 	echo "Error: cannot find rules file: $rules" 
